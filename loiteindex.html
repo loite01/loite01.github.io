@@ -1,26 +1,111 @@
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>loite</title>
-  
-   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
+
+
+
+
+
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <link href="lib/css/mozart.css" rel="stylesheet" media="all">
+	<link rel="stylesheet" type="text/css" href="lib/js/slick/slick.css">
+
+
+
+<style>
+      
+/* 슬라이드관련  */
+
+.Slidesbackground {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+.slideshow-image{
+    border-radius:3%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.mySlides {
+    border-radius:3%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
     }
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    to {
+        opacity: 1
     }
-  </style>
-  
+}
+
+/* 슬라이드관련 end   */
+
+/* 테두리 효과  */
+
+.shadow{
+  font-family:Mr Dafoe, sans-serif;
+  font-size:16em;
+  text-align:center;
+  text-shadow: 0 -3px 0 #333,
+    0 6px 8px rgba(0,0,0,.4),
+    0 9px 10px rgba(0,0,0,.15),
+   
+}
+
+/* 테두리 효과 end   */
+
+      /* UI Object 가로 */
+        .h_graph ul{margin:40px 50px 0 140px;padding:1px 0 0 0;border:1px solid #5f5f5f;border-top:0;border-right:0;font-size:13px;font-family:Tahoma, Geneva, sans-serif;list-style:none}
+        .h_graph li{position:relative;margin:20px 0;vertical-align:top;white-space:nowrap}
+        .h_graph .g_term{position:absolute;top:0;left:-115px;width:40px;font-weight:bold;color:#000000;line-height:40px;text-align:right}
+        .h_graph .g_bar{display:inline-block;position:relative;height:40px;border:1px solid #ccc;border-left:0;background:#e73ea9}
+        .h_graph .g_bar span{position:absolute;top:9px;right:-50px;width:40px;font-size:15px;color:#767676;line-height:20px}
+        /* //UI Object */
+        /* UI Object 세로 */
+        .ratio{padding-top:20px}
+        .ratio li{float:left;position:relative;width:100px;height:300px;margin-right:10px;list-style:none}
+        .ratio div{position:absolute;left:0;bottom:0;width:100%;background:url(img/graph.png) repeat;font-size:0}
+        .ratio em{position:absolute;top:-20px;width:100%;font-size:12px;font-weight:bold;text-align:center}
+        /* //UI Object */
+
+
+
+</style>
+
+
+
 </head>
 <body>
-<div>
-<img class="fit-picture" src="mainimg.jpg" alt="loite" />
-</div>
-</body>
-</html>
+ 
+<span class="slideshow-container">
+<div class="Slidesbackground">
+
+  <div class="mySlides fade">
+   <img src="mainimg.jpg" style="width:100%;height:100%">
+  </div>
+  
+ 
+ </div>
+</span>	
+ 
+</body></html>
